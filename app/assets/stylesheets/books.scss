@@ -50,12 +50,6 @@ a {
   animation: SlideIn 8s;
 }
 
-.side_contents {
-  font-size: 2.5vh;
-  font-family: 'Economica', sans-serif;
-  line-height: 40px;
-}
-
 .impact{
   color: brown;
   animation:  SlideIn 5s;
@@ -76,7 +70,6 @@ a {
 }
 
 .side-bar-header {
-  background-color: #253141;
   height: 120px;
   padding: 0 20px;
   display: flex;
@@ -86,11 +79,21 @@ a {
 
 
 
-.rooms {
+.side-bar-fotter {
   background-color: #2F3E51;
   height: calc(100vh - 120px);
   padding: 0 20px;
   overflow: scroll;
   color: #fff;
+  list-style: none;
+}
+
+.side-contents{
+  text-decoration: none;
+  margin-right: 3vw;
+  color:#fff;
+  font-size: 2.5vh;
+  font-family: 'Economica', sans-serif;
+  line-height: 40px;
 }
 
