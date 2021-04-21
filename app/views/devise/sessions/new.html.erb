@@ -2,6 +2,7 @@
   <%= render "books/side_bar" %>
 <%= form_with model: resource, as: resource_name, url: session_path(resource_name),
 class: 'registration-main', local: true do |f| %>
+<%=link_to '←', root_path, class:"back-btn" %>
 <div class='form-wrap'>
   <div class='form-header'>
     <h1 class='form-header-text'>

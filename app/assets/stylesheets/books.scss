@@ -97,6 +97,28 @@ a {
 }
 
 
+
+
+//新規投稿
+.book-main{
+  display: flex;
+  font-family: "Hannari"; 
+}
+
+
+.book-main {
+  width: 100%;
+  min-width: 800px;
+  height: 100vh;
+  display: flex;
+  justify-content:flex-start;
+  border: 2px brown solid;
+  background-image: image-url('publicdomainq-0003837oilyxa.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 .back-btn{
   font-size: 5vh;
   color: #fff;
@@ -104,3 +126,42 @@ a {
   border: 2px brown solid;
 }
 
+
+.book-wrap {
+  width: 60%;
+  border: 2px brown solid;
+}
+
+.book-header {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.book-header-text {
+  line-height: 100px;
+  font-weight: bold;
+  color: #fff;
+  animation: SlideIn 1.2s;
+}
+
+.book-group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin:0 auto;
+  animation: SlideIn 2.8s;
+}
+
+.book-text-wrap {
+  width: 100%;
+  height: 20%;
+}
+
+.book-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
