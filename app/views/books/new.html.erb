@@ -19,7 +19,7 @@
   </div>
     <div class="book-group">
     <div class='book-text-wrap'>
-      <label class="book-text">Info</label>
+      <label class="book-text">ジャンル</label>
     </div>
     <%= f.collection_select(:category_id, Category.all, :id, :name, {}, 
     {class:"input-select", id:"item-category"}) %>
