@@ -4,13 +4,19 @@
   </div>
 
   <div class='title-contents'>
-    <p class='service-title txt01'>
-     今日はゆっくり<span class="impact">読書</span>しませんか?
+   <% if user_signed_in? %>
+    <p class='service-title'>
+     今日もおつかれさまでした
     </p>
-    <p class='service-explain txt02'>
-      あと10日
+   <% else %>
+    <p class='service-title'>
+     たまにはゆっくり<span class="impact">読書</span>しませんか?
     </p>
-    <p class='service-explain txt03'>
+   <% end %>
+    <p class='service-explain'>
+      あと9日
+    </p>
+    <p class='service-explain'>
       とりあえずは完成を目指す。
     </p>
     <div class='store-btn'>
