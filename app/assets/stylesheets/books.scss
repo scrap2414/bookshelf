@@ -11,7 +11,6 @@ a {
   margin-right: 10vw;
 }
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 85vw;
   height: 100vh;
@@ -95,5 +94,13 @@ a {
   font-size: 3vh;
   font-family: 'Economica', sans-serif;
   line-height: 50px;
+}
+
+
+.back-btn{
+  font-size: 5vh;
+  color: #fff;
+  display: block;
+  border: 2px brown solid;
 }
 
