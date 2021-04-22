@@ -6,7 +6,11 @@
   <div class="side-bar-fotter">
    <% unless current_page?(new_user_registration_path) ||current_page?(new_user_session_path)%>
     <% if user_signed_in? %>
-      <li><%= link_to current_user.name, "#", class: "side-contents"  %></li>
+      <li><%= link_to user_path(current_user.id), class: "side-contents" do %>
+      <%= current_user.name%>
+      <%= image_tag("booklogo.png", class:"mini-icon") %>
+      <% end %>
+      </li>
       <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "side-contents"%></li>
     <% else %>
       <li><%= link_to "Login",  new_user_session_path, class: "side-contents" %></li>

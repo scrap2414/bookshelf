@@ -8,7 +8,16 @@ a {
 
 .icon {
   width: 12vw;
-  margin-right: 10vw;
+  margin-right: 5vw;
+}
+
+
+.mini-icon {
+  width: 2.5vw;
+  padding-left:2vw;
+  position: absolute;
+  right:-3vw;
+  top: -0.5vh;
 }
 
 .title-contents {
@@ -89,11 +98,12 @@ a {
 
 .side-contents{
   text-decoration: none;
-  margin-right: 3vw;
+  margin-right: 1vw;
   color:#fff;
   font-size: 3vh;
   font-family: 'Economica', sans-serif;
   line-height: 50px;
+  position: relative;
 }
 
 
