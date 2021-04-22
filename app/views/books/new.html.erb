@@ -30,12 +30,22 @@
     </div>
     <%= f.text_area :information, class:"input-default", id:"nickname"%>
   </div>
+  <div class="book-group">
+    <div class='book-text-wrap'>
+      <label class="book-text">Image</label>
+    </div>
+    <%= f.file_field :image, id:"book-image" %>
+    
+  </div>
   <div class='register-btn'>
     <%= f.submit "書籍登録" ,class:"register-red-btn" %>
   </div>
 </div>
+
 <% end %>
 </div>
 
 
+
+ 
 
