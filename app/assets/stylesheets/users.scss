@@ -1,3 +1,19 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.user-contents {
+  font-size: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+
+.user-text {
+  font-size: 3vh;
+  font-weight: bold;
+  color: #fff;
+}
+
+.user-books {
+  display: flex;
+}

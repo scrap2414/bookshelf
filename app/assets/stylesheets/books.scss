@@ -116,7 +116,7 @@ a {
 }
 
 
-.book-main {
+.book-main-contents {
   width: 100%;
   min-width: 800px;
   height: 100vh;
@@ -146,7 +146,7 @@ a {
   width: 100%;
   height: 120px;
   text-align: center;
-  font-size: 22px;
+  font-size: 4vh;
 }
 
 .book-header-text {
@@ -177,3 +177,18 @@ a {
 }
 
 
+
+
+//一覧表示
+
+.books-main {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+
+ }
+
+ .books-contents {
+  font-size: 2.5vh;
+  color: #fff;
+  border: 2px brown solid;
+ }

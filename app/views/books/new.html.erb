@@ -2,7 +2,7 @@
   <%= render "books/side_bar" %>
 
 
-<%= form_with model: @book,  class: 'book-main', local: true do |f| %>
+<%= form_with model: @book,  class: 'book-main-contents', local: true do |f| %>
 <%=link_to '←', root_path, class:"back-btn" %>
 <div class='book-wrap'>
   <div class='book-header'>

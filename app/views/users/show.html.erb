@@ -1,5 +1,38 @@
 <div class='book-main'>
   <%= render "books/side_bar" %>
+  <div class='book-main-contents'>
+   <%=link_to '←', root_path, class:"back-btn" %>
+    <div class='book-wrap'>
+      <div class='book-header'>
+        <h1 class='book-header-text'>
+        ユーザーページ
+        </h1>
+      </div>
+
+      <div class="book-group">
+      <div class="user-text">
+      ユーザーコンテンツ
+      </div>
+      </div>
+
+      <div class="book-group">
+      <div class="user-text">
+      ユーザーコンテンツ
+      </div>
+      </div>
+
+      <div class="book-group">
+      <div class="user-text">
+      ユーザーコンテンツ
+      </div>
+      </div>
+
+      <div class="user-books">
+      <%=render partial: "books/book", collection: @books %>
+      </div>
+      
+    </div>
+  </div>
 </div>
 
 
