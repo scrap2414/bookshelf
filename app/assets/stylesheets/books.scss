@@ -184,11 +184,24 @@ a {
 .books-main {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-
+  
  }
 
  .books-contents {
+  display: table;
+  min-height: 20vh;
+  max-height: 40vh;
   font-size: 2.5vh;
-  color: #fff;
-  border: 2px brown solid;
+  color:#253141;
+  border: 2px #2F3E51 solid;
+  
  }
+
+.v01{
+  background-color:rgb(185, 126, 84);
+}
+
+
+.v02{
+  background-color:rgb(206, 137, 125);
+}

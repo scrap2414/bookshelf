@@ -16,4 +16,7 @@
 
 .user-books {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: 2px brown solid;
 }

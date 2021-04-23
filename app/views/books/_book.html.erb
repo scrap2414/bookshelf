@@ -1,5 +1,11 @@
 <div class="books-main">
- <div class="books-contents">
-  <%= book.name%>
- </div>
+  <% if book.category_id == 2 %>
+    <div class="books-contents v01">
+    <%= book.name%>
+    </div>
+  <% else %>
+    <div class="books-contents v02">
+    <%= book.name%>
+    </div>
+  <% end %>
 </div>
