@@ -184,7 +184,7 @@ a {
 .books-main {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  
+  box-shadow: 0 -1px 0 0 #bfb19c, 0 5px 2px 0 rgba(0,0,0,.4),0 1px 0 0 #443721,0 -1px 0 0 #bfb19c inset;
  }
 
  .books-contents {
@@ -197,11 +197,18 @@ a {
   
  }
 
-.v01{
-  background-color:rgb(185, 126, 84);
+.v02{
+  background-color:rgb(81, 114, 145);
+  border: 2px rgb(108, 138, 158) solid;
 }
 
 
-.v02{
-  background-color:rgb(206, 137, 125);
+.v03{
+  background-color:rgb(226, 131, 114);
+  border: 2px rgb(228, 154, 141) solid;
+}
+
+.v04{
+  background-color:rgb(230, 169, 126);
+  border: 2px rgb(229, 180, 145) solid;
 }

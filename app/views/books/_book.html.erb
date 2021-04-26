@@ -1,10 +1,14 @@
 <div class="books-main">
   <% if book.category_id == 2 %>
-    <div class="books-contents v01">
+    <div class="books-contents v02">
+    <%= book.name%>
+    </div>
+  <% elsif book.category_id == 3 %>
+      <div class="books-contents v03">
     <%= book.name%>
     </div>
   <% else %>
-    <div class="books-contents v02">
+    <div class="books-contents v04">
     <%= book.name%>
     </div>
   <% end %>
