@@ -91,7 +91,6 @@ a {
   background-color: #2F3E51;
   height: calc(100vh - 120px);
   padding: 0 20px;
-  overflow: scroll;
   color: #fff;
   list-style: none;
 }
@@ -122,24 +121,24 @@ a {
   height: 100vh;
   display: flex;
   justify-content:flex-start;
-  border: 2px brown solid;
   background-image: image-url('publicdomainq-0003837oilyxa.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  
 }
 
 .back-btn{
   font-size: 5vh;
   color: #fff;
   display: block;
-  border: 2px brown solid;
 }
 
 
 .book-wrap {
   width: 60%;
-  border: 2px brown solid;
+  
+
 }
 
 .book-header {
@@ -163,6 +162,18 @@ a {
   padding-top: 20px;
   margin:0 auto;
   animation: SlideIn 2.8s;
+}
+
+.date-default {
+  width: 100%;
+  margin-top: 0px;
+  height: 10px;
+  padding: 8px 0px ;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background:snow;
+  font-size: 16px;
+  resize: none;
 }
 
 .book-text-wrap {

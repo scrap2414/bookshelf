@@ -15,21 +15,48 @@
     <div class='book-text-wrap'>
       <label class="book-text">タイトル</label>
     </div>
-    <%= f.text_area :name, class:"input-default", id:"nickname", maxlength:"40" %>
+    <%= f.text_area :name, class:"input-default", maxlength:"40" %>
   </div>
-    <div class="book-group">
+
+  <div class="book-group">
+    <div class='book-text-wrap'>
+      <label class="book-text">著者</label>
+    </div>
+    <%= f.text_area :author, class:"input-default", maxlength:"20" %>
+  </div>
+
+  <div class="book-group">
     <div class='book-text-wrap'>
       <label class="book-text">ジャンル</label>
     </div>
     <%= f.collection_select(:category_id, Category.all, :id, :name, {}, 
     {class:"input-select", id:"item-category"}) %>
   </div>
+
   <div class="book-group">
     <div class='book-text-wrap'>
       <label class="book-text">Info</label>
     </div>
-    <%= f.text_area :information, class:"input-default", id:"nickname"%>
+    <%= f.text_area :information, class:"input-default"%>
   </div>
+
+  <div class="book-group">
+    <div class='book-text-wrap'>
+      <label class="book-text">日付</label>
+    </div>
+    <%= f.date_field :date, class:"date-default" %>
+  </div>
+
+
+  <div class="book-group">
+    <div class='book-text-wrap'>
+      <label class="book-text">読書状況</label>
+    </div>
+    <%= f.collection_select(:status_id, Status.all, :id, :name, {}, 
+    {class:"input-select", id:"item-category"}) %>
+  </div>
+
+
   <div class="book-group">
     <div class='book-text-wrap'>
       <label class="book-text">Image</label>
@@ -48,4 +75,6 @@
 
 
  
+
+  
 
