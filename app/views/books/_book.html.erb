@@ -1,15 +1,15 @@
 <div class="books-main">
   <% if book.category_id == 2 %>
     <div class="books-contents v02">
-    <%= link_to book.name, book_path(book.id) %>
+    <%= link_to book.name, book_path(book.id),class: "books-contents" %>
     </div>
   <% elsif book.category_id == 3 %>
       <div class="books-contents v03">
-    <%= book.name%>
+    <%= link_to book.name, book_path(book.id), class: "books-contents" %>
     </div>
   <% else %>
     <div class="books-contents v04">
-    <%= book.name%>
+    <%= link_to book.name, book_path(book.id) ,class: "books-contents"%>
     </div>
   <% end %>
 </div>
