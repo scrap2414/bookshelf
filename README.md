@@ -1,4 +1,4 @@
-# ![book](https://user-images.githubusercontent.com/80100413/116225106-6663ab00-a78c-11eb-91c6-1e85007d6c63.png)
+# ![book](app/assets/images/booklogo-b.png)
 
 ## 📕アプリ概要
 
