@@ -35,13 +35,12 @@ class BooksController < ApplicationController
     redirect_to root_path
   end
 
-
-
   private
 
   def book_params
     params.require(:book).permit(
-      :image, :name, :author, :date, :information, :category_id, :status_id).merge(user_id: current_user.id)
+      :image, :name, :author, :date, :information, :category_id, :status_id
+    ).merge(user_id: current_user.id)
   end
 
   def move_to_index
@@ -52,5 +51,4 @@ class BooksController < ApplicationController
   def set_book
     @book = Book.find(params[:id])
   end
-
 end

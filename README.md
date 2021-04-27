@@ -1,24 +1,15 @@
-# README
+# ![book](https://user-images.githubusercontent.com/80100413/116225106-6663ab00-a78c-11eb-91c6-1e85007d6c63.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 📕アプリ概要
 
-Things you may want to cover:
 
-* Ruby version
+## 📗アプリ機能
+<h3>１，ユーザーの登録</h3>
+<h3>２，書籍の登録</h3>
+<h3>３，ユーザーページに書籍を表示</h3>
+<h3>４，書籍の詳細表示</h3>
 
-* System dependencies
+## 📘利用方法
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 📙データベース設計
