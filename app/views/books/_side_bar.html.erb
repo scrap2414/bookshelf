@@ -5,12 +5,12 @@
 
   <div class="side-bar-fotter">
    <% if user_signed_in? %>
-      <li><%= link_to user_path(current_user.id), class: "side-contents" do %>
-      <%= current_user.name%>
+      <li><%= link_to current_user.name, user_path(current_user.id), class: "side-contents"  %></li>
+      <li><%= link_to  new_book_path, class: "side-contents" do %>
+      <%= "New Book" %>
       <%= image_tag("booklogo.png", class:"mini-icon") %>
       <% end %>
       </li>
-      <li><%= link_to "New Book", new_book_path, class: "side-contents"%></li>
       <% if controller_name == "books" && action_name == "show"%>
       <li><%= link_to "Edit", edit_book_path(@book.id),  class: "side-contents"%></li>
       <% end %>
