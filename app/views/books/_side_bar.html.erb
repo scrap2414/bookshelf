@@ -10,7 +10,7 @@
       <%= image_tag("booklogo.png", class:"mini-icon") %>
       <% end %>
       </li>
-      <li><%= link_to "New", new_book_path, class: "side-contents"%></li>
+      <li><%= link_to "New Book", new_book_path, class: "side-contents"%></li>
       <% if controller_name == "books" && action_name == "show"%>
       <li><%= link_to "Edit", edit_book_path(@book.id),  class: "side-contents"%></li>
       <% end %>
@@ -18,7 +18,7 @@
     <% else %>
     <% unless current_page?(new_user_registration_path) ||current_page?(new_user_session_path) %>
       <li><%= link_to "Login",  new_user_session_path, class: "side-contents" %></li>
-      <li><%= link_to "New", new_user_registration_path, class: "side-contents"%></li>
+      <li><%= link_to "New User", new_user_registration_path, class: "side-contents"%></li>
     <% end %>
    <% end %>
   </div>
