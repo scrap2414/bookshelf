@@ -4,4 +4,9 @@ class Book < ApplicationRecord
   belongs_to :status
   belongs_to :user
   has_one_attached :image, dependent: :destroy
+
+  with_options presence: true do
+    validatable :name
+    validatable :author
+  end
 end

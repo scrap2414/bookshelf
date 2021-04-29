@@ -23,13 +23,13 @@
 
       <div class="book-group">
       <div class="book-info">
-      <%= "カテゴリ:#{@book.category.name}"%>
+      <%= "ジャンル:#{@book.category.name}" unless @book.category_id == 1%>
       </div>
       </div>
 
       <div class="book-group">
       <div class="book-info">
-      <%= "一言:#{@book.information}"%>
+      <%= "一言:#{@book.information}" if @book.information.present? %>
       </div>
       </div>
 
@@ -39,8 +39,6 @@
       </div>
       </div>
   
-
-
 
 
 

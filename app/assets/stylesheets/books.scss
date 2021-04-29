@@ -163,7 +163,7 @@ a {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 15px;
   margin:0 auto;
   animation: SlideIn 2.8s;
   border: 2px brown solid;
@@ -176,7 +176,7 @@ a {
   padding: 8px 0px ;
   border-radius: 4px;
   border: 1px solid #ccc;
-  background:snow;
+  background:rgba(255,250,250,0.7);
   font-size: 16px;
   resize: none;
 }
@@ -248,12 +248,12 @@ a {
 
 .book-date{
   font-size: 16px;
-  }
+}
 
-  .book-image-head{
+.book-image-head{
     display: flex;
     justify-content: center;
-  }
+}
 
 .book-image{
   max-height: 30vh;

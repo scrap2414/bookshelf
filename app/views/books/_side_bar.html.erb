@@ -14,6 +14,9 @@
       <% if controller_name == "books" && action_name == "show"%>
       <li><%= link_to "Edit", edit_book_path(@book.id),  class: "side-contents"%></li>
       <% end %>
+      <% if controller_name == "users" %>
+      <%= link_to "Edit", edit_user_registration_path(current_user.id),  class: "side-contents"%>
+      <% end %>
       <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "side-contents"%></li>
     <% else %>
     <% unless current_page?(new_user_registration_path) ||current_page?(new_user_session_path) %>

@@ -2,9 +2,15 @@
 <%=link_to '←', root_path, class:"back-btn" %>
 <div class='form-wrap'>
   <div class='form-header'>
+   <% unless user_signed_in?%>
     <h1 class='form-header-text'>
       ユーザー新規登録
     </h1>
+   <% else %>
+    <h1 class='form-header-text'>
+      ユーザープロフィール編集
+    </h1>
+   <% end %>
   </div>
 
   <%= render "shared/error_messages", model: f.object %>
@@ -40,9 +46,28 @@
     <%= f.submit "会員登録" ,class:"register-red-btn" %>
   </div>
   <% else %>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">Profile</label>
+    </div>
+    <%= f.text_area :profile, class:"profile-default", maxlength:"40" %>
+  </div>
+
+
+
+  <div class="book-group">
+    <div class='book-text-wrap'>
+      <label class="book-text">Image</label>
+    </div>
+    <%= f.file_field :image, id:"user-image" %>
+  </div>
+
   <div class="register-btn">
     <%= f.submit "情報更新",class:"register-red-btn"  %>
   </div>
   <% end %>
 </div>
 <% end %>
+
+

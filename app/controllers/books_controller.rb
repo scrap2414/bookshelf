@@ -3,7 +3,6 @@ class BooksController < ApplicationController
   before_action :move_to_index, only: [:edit, :update, :destroy]
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
-
   def index
   end
 
@@ -48,8 +47,6 @@ class BooksController < ApplicationController
       :image, :name, :author, :date, :information, :category_id, :status_id
     ).merge(user_id: current_user.id)
   end
-
-
 
   def move_to_index
     @book = Book.find(params[:id])
