@@ -11,21 +11,28 @@
 
       <div class="book-group">
       <div class="user-text">
-      ユーザーコンテンツ
+      <%= "著者:#{@book.author}"%>
       </div>
       </div>
 
       <div class="book-group">
       <div class="user-text">
-      ユーザーコンテンツ
+      <%= "カテゴリ:#{@book.category.name}"%>
       </div>
       </div>
 
       <div class="book-group">
       <div class="user-text">
-      ユーザーコンテンツ
+      <%= "一言:#{@book.information}"%>
       </div>
       </div>
+
+      <div class="book-group">
+      <div class="user-text">
+      <%= "状態:#{@book.status.name}"%>
+      </div>
+      </div>
+
 
       <div class="user-books">
       <%=render partial: "books/book", collection: @books %>
