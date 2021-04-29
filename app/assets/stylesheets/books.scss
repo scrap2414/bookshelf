@@ -128,6 +128,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  
 }
 
 .back-btn{
@@ -139,8 +140,9 @@ a {
 
 .book-wrap {
   width: 60%;
-  
-
+  border: 2px brown solid;
+  overflow: scroll;
+ 
 }
 
 .book-header {
@@ -164,6 +166,7 @@ a {
   padding-top: 20px;
   margin:0 auto;
   animation: SlideIn 2.8s;
+  border: 2px brown solid;
 }
 
 .date-default {
@@ -197,7 +200,7 @@ a {
 .books-main {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  box-shadow: 0 -1px 0 0 #bfb19c, 0 5px 2px 0 rgba(0,0,0,.4),0 1px 0 0 #443721,0 -1px 0 0 #bfb19c inset;
+  box-shadow: 0 -1px 0 0 #bfb19c,0 -1px 0 0 #bfb19c inset;
  }
 
  .books-contents {
@@ -222,4 +225,38 @@ a {
 .v04{
   background-color:rgb(230, 169, 126);
   border: 2px rgb(229, 180, 145) solid;
+}
+
+.books-wood{
+  margin: 1px 0 5px 0;
+  height: 4vh;
+  width: 100%;
+  background-image: image-url('wood-texture_00034.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  box-shadow:  0 5px 2px 0 rgba(0,0,0,.4),0 1px 0 0 #443721;
+}
+
+//詳細表示
+
+
+.book-info{
+  font-size: 3vh;
+  color: #fff;
+}
+
+.book-date{
+  font-size: 16px;
+  }
+
+  .book-image-head{
+    display: flex;
+    justify-content: center;
+  }
+
+.book-image{
+  max-height: 30vh;
+  max-width: 50vh;
+  border: 2px brown solid;
 }

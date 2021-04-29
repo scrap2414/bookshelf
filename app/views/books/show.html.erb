@@ -8,35 +8,49 @@
          <%= @book.name%>
         </h1>
       </div>
+   
+      <div class="book-group">
+      <div class="book-image-head">
+      <%= image_tag @book.image.variant(resize: '500x500') ,class:"book-image" if @book.image.attached?  %>
+      </div>
+      </div>
 
       <div class="book-group">
-      <div class="user-text">
+      <div class="book-info">
       <%= "著者:#{@book.author}"%>
       </div>
       </div>
 
       <div class="book-group">
-      <div class="user-text">
+      <div class="book-info">
       <%= "カテゴリ:#{@book.category.name}"%>
       </div>
       </div>
 
       <div class="book-group">
-      <div class="user-text">
+      <div class="book-info">
       <%= "一言:#{@book.information}"%>
       </div>
       </div>
 
       <div class="book-group">
-      <div class="user-text">
-      <%= "状態:#{@book.status.name}"%>
+      <div class="book-info">
+      <%= "状態:#{@book.status.name}" %><span class="book-date"> <%=@book.date%></span>
       </div>
       </div>
+  
+
+
+
+
 
 
       <div class="user-books">
       <%=render partial: "books/book", collection: @books %>
       </div>
+      <div class="books-wood"></div>
       
     </div>
 </div>
+
+

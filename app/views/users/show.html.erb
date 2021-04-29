@@ -23,14 +23,17 @@
 
       <div class="book-group">
       <div class="user-text">
-      ユーザーコンテンツ
+      ユーザーコンテンツっで
       <%= link_to "Edit", edit_user_registration_path(current_user.id),  class: "side-contents"%>
       </div>
       </div>
 
+      
       <div class="user-books">
       <%=render partial: "books/book", collection: @books %>
       </div>
+      <div class="books-wood"></div>
+     
       
     </div>
   </div>
