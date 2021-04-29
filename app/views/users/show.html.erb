@@ -5,7 +5,7 @@
     <div class='book-wrap'>
       <div class='book-header'>
         <h1 class='book-header-text'>
-         <%= current_user.name%>
+         <%= image_tag @user.image ,class:"user-icon" if @user.image.attached? %><%= current_user.name%>
         </h1>
       </div>
 

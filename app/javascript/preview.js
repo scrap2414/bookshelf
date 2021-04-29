@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-  if ( document.getElementById('book-image')){
+  if ( document.getElementById('user-image')){
     const ImageList = document.getElementById('image-list');
 
     const createImageHTML = (blob) => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
       ImageList.appendChild(imageElement);
     };
 
-    document.getElementById('book-image').addEventListener('change', function(e){
+    document.getElementById('user-image').addEventListener('change', function(e){
       // 画像が表示されている場合のみ、すでに存在している画像を削除する
       const imageContent = document.querySelector('img');
       if (imageContent){

@@ -12,6 +12,7 @@
     </h1>
    <% end %>
   </div>
+ 
 
   <%= render "shared/error_messages", model: f.object %>
 
@@ -58,10 +59,15 @@
 
   <div class="book-group">
     <div class='book-text-wrap'>
-      <label class="book-text">Image</label>
+      <label class="book-text">Icon</label>
     </div>
-    <%= f.file_field :image, id:"user-image" %>
-  </div>
+    <label>
+      <div class="filelabel" id="image-list">
+      </div>
+    <%= f.file_field :image, class:"user-image", id:"user-image" %>
+    </label>
+    
+    </div>
 
   <div class="register-btn">
     <%= f.submit "情報更新",class:"register-red-btn"  %>
