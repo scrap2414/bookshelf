@@ -12,13 +12,7 @@ a {
 }
 
 
-.mini-icon {
-  width: 2.5vw;
-  padding-left:2vw;
-  position: absolute;
-  right:-3vw;
-  top: -0.5vh;
-}
+
 
 
 .side-bar {
@@ -128,7 +122,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  
 }
 
 .back-btn{
@@ -140,7 +133,6 @@ a {
 
 .book-wrap {
   width: 60%;
-  border: 2px brown solid;
   overflow: scroll;
  
 }
@@ -160,13 +152,12 @@ a {
 }
 
 .book-group {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   padding-top: 15px;
   margin:0 auto;
   animation: SlideIn 2.8s;
-  border: 2px brown solid;
 }
 
 .date-default {
@@ -236,6 +227,7 @@ a {
   background-repeat: no-repeat;
   background-position: top center;
   box-shadow:  0 5px 2px 0 rgba(0,0,0,.4),0 1px 0 0 #443721;
+  animation: SlideIn 4.6s;
 }
 
 //詳細表示
@@ -258,5 +250,4 @@ a {
 .book-image{
   max-height: 30vh;
   max-width: 50vh;
-  border: 2px brown solid;
 }

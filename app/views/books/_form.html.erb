@@ -1,5 +1,5 @@
 <%= form_with model: @book,  class: 'book-main-contents', local: true do |f| %>
-<%=link_to '←', root_path, class:"back-btn" %>
+<%=link_to '↩', root_path, class:"back-btn" %>
 <div class='book-wrap'>
   <div class='book-header'>
     <h1 class='book-header-text'>
@@ -59,7 +59,7 @@
     </div>
     <%= f.file_field :image, id:"book-image" %>
   </div>
-  
+
   <div class='register-btn'>
     <%= f.submit "書籍登録" ,class:"register-red-btn" %>
   </div>

@@ -10,12 +10,10 @@
   height: 100vh;
   display: flex;
   justify-content:flex-start;
-  border: 2px brown solid;
 }
 
 .form-wrap {
   width: 60%;
-  border: 2px brown solid;
 }
 
 .form-header {

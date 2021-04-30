@@ -1,7 +1,7 @@
 <div class='book-main'>
   <%= render "books/side_bar" %>
   <div class='book-main-contents'>
-   <%=link_to '←', root_path, class:"back-btn" %>
+   <%=link_to '↩', root_path, class:"back-btn" %>
     <div class='book-wrap'>
       <div class='book-header'>
         <h1 class='book-header-text'>
@@ -11,7 +11,7 @@
 
       <div class="book-group">
       <div class="user-text">
-      
+      <%=  @user.profile %>
       </div>
       </div>
 
@@ -31,8 +31,9 @@
       <div class="user-books">
       <%=render partial: "books/book", collection: @books %>
       </div>
-      <div class="books-wood"></div>
-     
+      <% unless @books.blank? %>
+      <div class="books-wood" ></div>
+      <% end %>
       
     </div>
   </div>

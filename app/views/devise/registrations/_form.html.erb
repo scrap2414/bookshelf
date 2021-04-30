@@ -1,5 +1,5 @@
 <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
-<%=link_to '←', root_path, class:"back-btn" %>
+<%=link_to '↩', root_path, class:"back-btn" %>
 <div class='form-wrap'>
   <div class='form-header'>
    <% unless user_signed_in?%>
@@ -52,21 +52,19 @@
     <div class='form-text-wrap'>
       <label class="form-text">Profile</label>
     </div>
-    <%= f.text_area :profile, class:"profile-default", maxlength:"40" %>
+    <%= f.text_area :profile, class:"profile-default" %>
   </div>
 
 
 
-  <div class="book-group">
+  <div class="form-group">
     <div class='book-text-wrap'>
       <label class="book-text">Icon</label>
     </div>
     <label>
-      <div class="filelabel" id="image-list">
-      </div>
-    <%= f.file_field :image, class:"user-image", id:"user-image" %>
+    <div class="filelabel" id="image-list"></div>
+    <%= f.file_field :image, class:"user-f-image", id:"user-image" %>
     </label>
-    
     </div>
 
   <div class="register-btn">

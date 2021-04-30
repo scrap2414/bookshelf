@@ -10,7 +10,7 @@
 
 .user-text {
   font-size: 3vh;
-  font-weight: bold;
+  display: table;
   color: #fff;
 }
 
@@ -19,6 +19,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  animation: SlideIn 6.6s;
 }
 
 .profile-default {
@@ -69,6 +70,6 @@
   border: 2px solid red;     /* 枠線(赤色) */
   cursor: pointer;           /* マウス形状(ポインタ) */
 }
-.user-image {
+.user-f-image {
   display: none;  /* 本来のファイル選択フォームは非表示に */
 }
