@@ -6,7 +6,7 @@ class Book < ApplicationRecord
   has_one_attached :image, dependent: :destroy
 
   with_options presence: true do
-    validatable :name
-    validatable :author
+    validates :author
+    validates :name
   end
 end
