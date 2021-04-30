@@ -54,9 +54,3 @@ after_fork do |_server, _worker|
   defined?(ActiveRecord::Base) && ActiveRecord::Base.establish_connection
 end
 
-class Unicorn::HttpServer
-  def kill_worker(signal, wpid)
-    Process.kill(signal, wpid)
-    worker = @workers.delete(wpid) and worker.close rescue nil
-  end
-end
