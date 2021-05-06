@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     document.getElementById('user-image').addEventListener('change', function(e){
       // 画像が表示されている場合のみ、すでに存在している画像を削除する
-      const imageContent = document.querySelector('img');
+      const imageContent = document.querySelector('img:not(.top-icon)');
       if (imageContent){
         imageContent.remove();
       }

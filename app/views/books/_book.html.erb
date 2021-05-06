@@ -4,12 +4,12 @@
     <%= link_to book.name, book_path(book.id),class: "books-contents" %>
     </div>
   <% elsif book.category_id == 3 %>
-      <div class="books-contents v03">
+    <div class="books-contents v03">
     <%= link_to book.name, book_path(book.id), class: "books-contents" %>
     </div>
   <% else %>
     <div class="books-contents v04">
-    <%= link_to book.name, book_path(book.id) ,class: "books-contents"%>
+    <%= link_to book.name, book_path(book.id),class: "books-contents"%>
     </div>
   <% end %>
 </div>
