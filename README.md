@@ -65,5 +65,33 @@ Email// haru@kaze
 
 ## 📙データベース設計
 
+### users テーブル
 
-只今表記整理中です。
+| Column            | Type   | Options                   |
+| ---------         | ------ | -----------               |
+| name              | string | null: false               |
+| email             | string | null: false, unique: true |
+| encrypted_password| string | null: false               |
+| profile           | text   |                           |
+
+
+### Association
+
+- has_many : books
+
+
+### books テーブル
+
+| Column            | Type      | Options                |
+| ---------         | ------    | -----------            |
+| name              | string    | null: false            |
+| author            | string    |                        |
+| information       | text      |                        |
+| date              | date      |                        |
+| category_id       | integer   |                        |
+| status_id         | integer   |                        |
+| user              | references| foreign_key: true      |
+
+### Association
+
+- belongs_to : user
